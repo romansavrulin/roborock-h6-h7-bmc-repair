@@ -1,5 +1,5 @@
 * Texas Instruments Data Flash File
-* File created Fri Nov 21 11:46:45 2025
+* File created Fri Nov 21 12:55:59 2025
 *
 * Device Number 4800
 * Firmware Version 0.04
@@ -135,12 +135,12 @@
 "Protections","OCC2","Delay","1","s"
 "Protections","OCC","Recovery Threshold","100","mA"
 "Protections","OCC","Recovery Delay","10","s"
-"Protections","OCD1","Threshold","-10500","mA"
-"Protections","OCD1","Delay","6","s"
-"Protections","OCD2","Threshold","-15000","mA"
-"Protections","OCD2","Delay","1","s"
-"Protections","OCD","Recovery Threshold","-50","mA"
-"Protections","OCD","Recovery Delay","5","s"
+"Protections","OCD1","Threshold","-11300","mA"
+"Protections","OCD1","Delay","3","s"
+"Protections","OCD2","Threshold","-16000","mA"
+"Protections","OCD2","Delay","2","s"
+"Protections","OCD","Recovery Threshold","-85","mA"
+"Protections","OCD","Recovery Delay","3","s"
 "Protections","OCD","Latch Limit","0","-"
 "Protections","OCD","Counter Dec Delay","10","s"
 "Protections","OCD","Reset","15","s"
