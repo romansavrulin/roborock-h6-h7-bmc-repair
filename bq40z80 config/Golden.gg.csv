@@ -1,5 +1,5 @@
 * Texas Instruments Data Flash File
-* File created Thu Nov 20 23:20:54 2025
+* File created Fri Nov 21 11:46:45 2025
 *
 * Device Number 4800
 * Firmware Version 0.04
@@ -108,7 +108,7 @@
 "Settings","SMBus","Address","2c","-"
 "Settings","SMBus","Address Check","01","-"
 "Settings","Current Scaling","Scale Factor","2","-"
-"Settings","Manufacturing","Mfg Status init","0010","hex"
+"Settings","Manufacturing","Mfg Status init","00f8","hex"
 "Protections","CUV","Threshold","2444","mV"
 "Protections","CUV","Delay","2","s"
 "Protections","CUV","Recovery","3000","mV"
@@ -249,9 +249,9 @@
 "Advanced Charge Algorithm","Temperature Ranges","T2 Temp","12.0","°C"
 "Advanced Charge Algorithm","Temperature Ranges","T5 Temp","20.0","°C"
 "Advanced Charge Algorithm","Temperature Ranges","T6 Temp","25.0","°C"
-"Advanced Charge Algorithm","Temperature Ranges","T3 Temp","30.0","°C"
+"Advanced Charge Algorithm","Temperature Ranges","T3 Temp","38.0","°C"
 "Advanced Charge Algorithm","Temperature Ranges","T4 Temp","55.0","°C"
-"Advanced Charge Algorithm","Temperature Ranges","Hysteresis Temp","1.0","°C"
+"Advanced Charge Algorithm","Temperature Ranges","Hysteresis Temp","0.5","°C"
 "Advanced Charge Algorithm","Low Temp Charging","Voltage","4000","mV"
 "Advanced Charge Algorithm","Low Temp Charging","Current Low","132","mA"
 "Advanced Charge Algorithm","Low Temp Charging","Current Med","352","mA"
@@ -268,8 +268,8 @@
 "Advanced Charge Algorithm","High Temp Charging","Current Low","1012","mA"
 "Advanced Charge Algorithm","High Temp Charging","Current Med","1980","mA"
 "Advanced Charge Algorithm","High Temp Charging","Current High","1496","mA"
-"Advanced Charge Algorithm","Rec Temp Charging","Voltage","5654","mV"
-"Advanced Charge Algorithm","Rec Temp Charging","Current Low","396","mA"
+"Advanced Charge Algorithm","Rec Temp Charging","Voltage","4100","mV"
+"Advanced Charge Algorithm","Rec Temp Charging","Current Low","2000","mA"
 "Advanced Charge Algorithm","Rec Temp Charging","Current Med","4358","mA"
 "Advanced Charge Algorithm","Rec Temp Charging","Current High","3520","mA"
 "Advanced Charge Algorithm","Pre-Charging","Current","88","mA"
@@ -278,7 +278,7 @@
 "Advanced Charge Algorithm","Voltage Range","Charging Voltage Low","2900","mV"
 "Advanced Charge Algorithm","Voltage Range","Charging Voltage Med","22544","mV"
 "Advanced Charge Algorithm","Voltage Range","Charging Voltage High","3842","mV"
-"Advanced Charge Algorithm","Voltage Range","Charging Voltage Hysteresis","0","mV"
+"Advanced Charge Algorithm","Voltage Range","Charging Voltage Hysteresis","10","mV"
 "Advanced Charge Algorithm","SoC Range","Charging SoC Med","50","%"
 "Advanced Charge Algorithm","SoC Range","Charging SoC High","75","%"
 "Advanced Charge Algorithm","SoC Range","Charging SoC Hysteresis","1","%"
@@ -350,7 +350,7 @@
 "Gas Gauging","State","Qmax Cell 7","0","mAh"
 "Gas Gauging","State","Qmax Pack","3610","mAh"
 "Gas Gauging","State","Qmax Cycle Count","0","-"
-"Gas Gauging","State","Update Status","00","-"
+"Gas Gauging","State","Update Status","04","-"
 "Gas Gauging","State","Cell 1 Chg Voltage at EoC","4144","mV"
 "Gas Gauging","State","Cell 2 Chg Voltage at EoC","4140","mV"
 "Gas Gauging","State","Cell 3 Chg Voltage at EoC","4139","mV"
