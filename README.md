@@ -5,7 +5,7 @@ This is a repo of analysis, tools and (some) guides to repair the battery pack o
 I had bad luck getting counterfeit and wrong model batteries for my VC from Ali. I’ve tried to replace the board inside the battery pack, but every time when you disconnect battery from the board the `bq40z80` brings up permanent failure flag and locks up. Because I don’t have an unseal key to reset the PF status, I’ve decided to replace `bq40z80` with new one (that have factory default unseal key). In order to work fine, Gauge should have default settings and pass calibration process. I haven’t done latter, but uploading config brought my VC back to life and I’m totally satisfied with the result.
 
 ### Precautions
-- Cheap chinese batteries are dangerous! It has poor and risky connections, lacks of fuses, and my battery had power MOSFET issues and got into overheat protection just after 30 seconds of work (see photos)
+- Cheap chinese batteries are dangerous! It has poor and risky connections, lacks of fuses, and my battery had power MOSFET (PGN06N024M) issues and got into overheat protection just after 30 seconds of work (see photos)
 - Do not short-circuit battery pack directly under any circumstances. You will likely to burn anyting.
 
 ### Tools needed
@@ -43,3 +43,25 @@ I had bad luck getting counterfeit and wrong model batteries for my VC from Ali.
 
 ### Need help?
 I know, the info is very brief. I don’t have much time to provide a complete guide. But it highlights some key points that took me a lot of time to overcome. If you need help, feel free to contact me by email or here in issues
+
+#### Some useful links/tools
+Most are unrelated, but it gave me a good idea and understanding about what’s going with BMC controllers
+- [This guy claims that he gained full access on BQ40z50](https://www.youtube.com/watch?v=kaYimeXnIU8&t=1s) with Master SMBus v2.39
+- [Second guy says it has software that can unseal battery](https://www.youtube.com/watch?v=7r1rTHMr9Wg) @nickolay_knn at Telegram
+- [Forum of battery ulock](https://radiokot.ru/forum/viewtopic.php?f=35&t=101510&sid=23d6047dd021a2c7d186b6400630cc21&start=3680)
+- [A project that controls the Texas Instruments (TI) EV2300 hardware interface through C# WPF. Especially written for the BQ40Z80](https://github.com/Mictronics/bqev23k)
+- [Introduction to Battery Management Studio (bqStudio)](https://www.youtube.com/watch?v=APQoP_qxzQI)
+- [NLBA - Laptop Battery Analyzer . АКБ тестер. Разблокировка .](https://www.youtube.com/watch?v=qC15Zqg5HII)
+- [CP2112 and DJI Battery Killer Rewrite BQ8030 ROM" Laptop battery data retrieval - BMS HACK](https://www.youtube.com/watch?v=uhSMc_fPxh8)
+- [How to repair Mavic pro battery permanent Failure, with free software. ](https://www.youtube.com/watch?v=CBlTkfsJcQs)
+- https://github.com/mnh-jansson/m18-protocol
+- [Full M18 diagnostics revealed - YouTube](https://www.youtube.com/watch?v=tHj0-Gzvbeo)
+- [How to repair Mavic pro battery permanent Failure, with free software](https://youtube.com/watch?v=CBlTkfsJcQs&si=mFBlF8w-6GyZoesW)
+- [Unlocking SBS-capable battery chip without expensive programmer - example on Mavic Pro battery](https://youtube.com/watch?v=P5PNOO2GebY&si=44EerjcWYcysOI5M)
+- [Be2Works](https://youtube.com/watch?v=BwDsApt3RP8&si=ueJGjeZyySnLrCrh)
+- [What balancers do](https://www.youtube.com/watch?v=Kxoony-xO30)
+- [DJi Killer](https://greyarro.ws/t/dji-battery-killer-repairing-tool/68863)
+- [Квадрокоптеры DJI - Аккумуляторные батареи](https://4pda.to/forum/index.php?showtopic=1003090&st=5060)
+- [Прошивка контроллера батарей ноутбука](https://vlab.su/viewtopic.php?f=181&t=507&start=1530)
+- [dji-firmware-tools](https://github.com/o-gs/dji-firmware-tools)
+- [How to Fix Dead DJI Drone Batteries Using Battery Killer and CP2112](https://diyprojectslabs.com/fix-dji-battery-with-dji-battery-killer/)
