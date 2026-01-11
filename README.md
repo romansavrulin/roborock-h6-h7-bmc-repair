@@ -4,6 +4,10 @@ This is a repo of analysis, tools and (some) guides to repair the battery pack o
 ### The story
 I had bad luck getting counterfeit and wrong model batteries for my VC from Ali. I’ve tried to replace the board inside the battery pack, but every time when you disconnect battery from the board the `bq40z80` brings up permanent failure flag and locks up. Because I don’t have an unseal key to reset the PF status, I’ve decided to replace `bq40z80` with new one (that have factory default unseal key). In order to work fine, Gauge should have default settings and pass calibration process. I haven’t done latter, but uploading config brought my VC back to life and I’m totally satisfied with the result.
 
+### Precautions
+- Cheap chinese batteries are dangerous! It has poor and risky connections, lacks of fuses, and my battery had power MOSFET issues and got into overheat protection just after 30 seconds of work (see photos)
+- Do not short-circuit battery pack directly under any circumstances. You will likely to burn anyting.
+
 ### Tools needed
 - [Cheap EV2400](https://aliexpress.ru/item/1005003308489798.html?spm=a2g2w.orderdetail.0.0.33e94aa6gQsmRD&sku_id=12000025129027661&_ga=2.229882334.319529504.1768079349-1585508259.1765472482) from ali express works fine
 - bqStudio (latest stable from TI works fine)
